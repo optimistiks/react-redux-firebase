@@ -1,0 +1,42 @@
+{
+  "name": "react-redux-firebase",
+  "version": "0.0.1",
+  "description": "A starter kit with React, Redux and Firebase",
+  "main": "index.js",
+  "repository": {
+    "url": "https://github.com/optimistiks/react-redux-firebase.git",
+    "type": "git"
+  },
+  "author": "optimistiks <mail@potapovmax.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "webpack-dev-server --hot --inline --config webpack/config.js",
+    "build": "webpack --config webpack/config.js"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.16.0",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "react-redux": "^4.4.5",
+    "react-router": "^2.8.1",
+    "redux": "^3.6.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.17.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-latest": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "eslint": "^3.8.1",
+    "eslint-config-airbnb": "^12.0.0",
+    "eslint-import-resolver-webpack": "^0.6.0",
+    "eslint-loader": "^1.6.0",
+    "eslint-plugin-import": "^2.0.1",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.4.1",
+    "file-loader": "^0.9.0",
+    "redux-devtools": "^3.3.1",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.16.2"
+  }
+}
