@@ -1,10 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 
-export default class About extends Component { // eslint-disable-line
-  render() {
-    return (
-      <div>About</div>
-    );
-  }
-}
+export default () => (<div>Home</div>);
