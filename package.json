@@ -10,8 +10,8 @@
   "author": "optimistiks <mail@potapovmax.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "webpack-dev-server --hot --inline --config webpack/config.js",
-    "build": "webpack --config webpack/config.js"
+    "dev": "webpack-dev-server --hot --inline --config webpack/config.babel.js",
+    "build": "webpack --config webpack/config.prod.babel.js"
   },
   "dependencies": {
     "babel-polyfill": "^6.16.0",
@@ -21,7 +21,10 @@
     "react-dom": "^15.3.2",
     "react-redux": "^4.4.5",
     "react-router": "^2.8.1",
-    "redux": "^3.6.0"
+    "redux": "^3.6.0",
+    "redux-saga": "^0.12.0",
+    "reselect": "^2.5.4",
+    "webpack": "^1.13.2"
   },
   "devDependencies": {
     "babel-core": "^6.17.0",
@@ -38,8 +41,6 @@
     "eslint-plugin-react": "^6.4.1",
     "file-loader": "^0.9.0",
     "jest": "^16.0.2",
-    "redux-devtools": "^3.3.1",
-    "webpack": "^1.13.2",
     "webpack-dev-server": "^1.16.2"
   }
 }

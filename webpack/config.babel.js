@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   entry: {
     javascript: [
       'babel-polyfill',
@@ -9,6 +9,9 @@ module.exports = {
   output: {
     path: './build/',
     filename: 'build.js',
+  },
+  resolve: {
+    extensions: ['', '.js', '.jsx'],
   },
   module: {
     preLoaders: [
@@ -24,7 +27,7 @@ module.exports = {
   },
   eslint: {
     configFile: './.eslintrc',
-    failOnWarning: false,
+    failOnWarning: true,
     failOnError: true,
   },
 };

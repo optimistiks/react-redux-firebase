@@ -1,10 +1,9 @@
 import React from 'react';
 import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 
-import App from './app.jsx';
-import Home from './home.jsx';
-import About from './about.jsx';
-
+import App from './app';
+import Home from './home';
+import About from './about';
 
 export default () => (
   <Router history={browserHistory}>
