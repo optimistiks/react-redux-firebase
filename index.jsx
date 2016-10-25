@@ -1,17 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 
-import App from './src/app.jsx';
-import Home from './src/home.jsx';
-import About from './src/about.jsx';
+import Routes from './src/routes.jsx';
 
 ReactDOM.render(
-  <Router history={browserHistory}>
-    <Route path="/" component={App}>
-      <IndexRoute component={Home} />
-      <Route path="about" component={About} />
-    </Route>
-  </Router>,
+  <Routes />,
   document.getElementById('app')
 );
