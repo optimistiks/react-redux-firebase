@@ -1,9 +1,14 @@
+import Immutable from 'immutable';
 import { INCREMENT_COUNTER } from '../actions';
 
-function counter(state = { value: 0 }, action) {
+const CounterState = new Immutable.Record({
+  value: 0,
+});
+
+function counter(state = new CounterState(), action) {
   switch (action.type) {
     case INCREMENT_COUNTER:
-      return { value: state.value + 1 };
+      return state.set('value', state.get('value') + 1);
     default:
       return state;
   }
