@@ -1,11 +1,11 @@
 import { connect } from 'react-redux';
-import Button from './button';
-import { exampleAction } from '../actions';
+import Button from '../../core/components/button';
+import { incrementCounter } from '../actions';
 
 
 const mapDispatchToProps = dispatch => ({
   onClick: () => {
-    dispatch(exampleAction());
+    dispatch(incrementCounter());
   },
 });
 
