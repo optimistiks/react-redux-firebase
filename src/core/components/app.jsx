@@ -4,7 +4,7 @@ import { Link } from 'react-router';
 const App = props => (
   <div className="App">
     <Link to="/">Home</Link>
-    <Link to="/about">Abouts</Link>
+    <Link to="/about">About</Link>
 
     { props.children }
   </div>
